@@ -1,0 +1,291 @@
+  #head-top {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            
+         
+
+        }
+
+        #head-top::before,
+        #head-top::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #head-top::before {
+            background-image: url(../img/By-Beck-Graben-A-Vanta-Society-Production-18.jpg);
+            background-size: cover;
+            background-position: center;
+            transition: 20s;
+        }
+
+        #head-top:hover::before {
+            transform: scale(1.3);
+        }
+
+
+        #head-top::after {
+            background-color: rgba(0, 0, 0, 0.459);
+        }
+
+        #head-top>div {
+            width: 100%;
+            height: 100%;
+            /* background-color: blueviolet; */
+            position: relative;
+            z-index: 9;
+        }
+
+        #head-top>div>section {
+            width: 100%;
+            /* border: 5px solid rgb(31, 209, 15); */
+        }
+
+        #head-top>div>section:first-child {
+            height: 10%;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        #head-top>div>section:first-child>header {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #head-top>div>section:first-child>header>* {
+            height: 100%;
+            /* border: 2px solid red; */
+
+        }
+
+        #head-top>div>section:first-child>header>figure {
+            width: 40%;
+        }
+
+        #head-top>div>section:first-child>header>figure>a>img {
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #head-top>div>section:first-child>header>div {
+            width: 60%;
+        }
+
+        #head-top>div>section:first-child>header>div>ul {
+            display: flex;
+            ;
+            font-size: 18px;
+        }
+
+        #head-top>div>section:first-child>header>div>ul>li>a {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 0 30px;
+            text-transform: uppercase;
+            transition:1s;
+
+        }
+         #head-top>div>section:first-child>header>div>ul>li>a:hover{
+            border-bottom: 1px solid whitesmoke;
+           
+         }
+
+        #head-top>div>section:last-child {
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+
+        }
+
+        #head-top>div>section:last-child>section {
+            width: 50%;
+            min-height: 50px;
+            /* background-color: cornflowerblue; */
+            /* padding-left:200px; */
+
+        }
+
+        #head-top>div>section:last-child>section>* {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            color: rgb(255, 252, 252);
+
+        }
+
+        #head-top>div>section:last-child>section>p {
+            text-transform: uppercase;
+            font-size: 2vw;
+
+        }
+
+        #head-top>div>section:last-child>section>h1 {
+            font-size: 5vw;
+            text-transform: uppercase;
+            margin-top: 35px;
+            margin-bottom: 20px;
+
+        }
+
+        #head-top>div>section:last-child>section>a {
+            text-transform: uppercase;
+            width: 100px;
+            height: 50px;
+            /* border: 1px solid red; */
+            justify-content: center;
+            align-items: center;
+            margin: 0px auto;
+            font-size: 1.2vw;
+            position: relative;
+            z-index: 100;
+
+        }
+
+        #head-top>div>section:last-child>section>a::after,
+        #head-top>div>section:last-child>section>a::before {
+            content: "";
+            width: 1px;
+            height: 30px;
+            background-color: white;
+            position: absolute;
+            opacity: 1;
+
+        }
+
+        #head-top>div>section:last-child>section>a::before {
+            top: 15%;
+            right: 0;
+            transition: 2s;
+
+        }
+
+        #head-top>div>section:last-child>section>a::after {
+            top: 15%;
+            left: 0px;
+            transition: 2s;
+        }
+
+        #head-top>div>section:last-child>section>a:hover::before {
+            opacity: 0;
+            right: -80px;
+
+        }
+
+        #head-top>div>section:last-child>section>a:hover::after {
+            opacity: 0;
+            left: -80px;
+        }
+
+        /******* end head-top *******/
+
+        #banner{
+            display: block;
+            width: 100%;
+            height: 100vh;
+            border: 5px solid red;
+
+        }
+         #banner>section{
+            width: 100%;
+            border: 2px solid yellow;
+            background-color: black;
+            position: relative;
+           
+
+         }
+           #banner>section:first-child{
+           height: 60%;
+              justify-content: center;
+            align-items: center;
+           }
+
+ #banner>section>.text{
+    width: 60%;
+    /* background-color: cyan; */
+    justify-content: center;
+   
+ }
+  #banner>section>.text>*{
+    display: flex;
+   width: 100%;
+    color: white;
+    justify-content: center;
+
+  }
+    #banner>section>.text>h3{
+        font-size: 2vw;
+    }
+  #banner>section>.text>h4{
+        font-size: 1.5vw;
+        margin: 30px 0;
+        text-align: center;
+        line-height:35px;
+    }
+ #banner>section>.text>a{
+text-transform: capitalize;
+width: 100px;
+ height: 50px;
+ /* border: 1px solid red; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.2vw;
+ position: relative;
+ }
+ #banner>section>.text>a::after,
+  #banner>section>.text>a::before{
+    content: "";
+    width: 1px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    opacity: 1;
+ }
+  #banner>section>.text>a::before{
+     top: 15%;
+    right: 0;
+    transition: 2s;
+  }
+   #banner>section>.text>a::after{
+            top: 15%;
+            left: 0px;
+            transition: 2s;
+   }
+    #banner>section>.text>a:hover::before{
+        opacity: 0;
+         right: -80px;
+    }
+       #banner>section>.text>a:hover::after{
+        opacity: 0;
+        left: -80px;
+        }
+       
+           #banner>section:last-child{
+           height: 40%;
+           background-color: cornflowerblue;
+display: flex;
+           }
+            #banner>section:last-child>div>*{
+                width: 100%;
+                
+                /* flex-wrap: wrap; */
+                background-color: crimson;
+               
+            }
+            #banner>section:last-child>div>a{
+                border: 1px solid black;
+                justify-content: space-evenly;
+               
+            }

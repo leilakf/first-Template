@@ -1,0 +1,22 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Josefin Sans", sans-serif;
+    font-size: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type: none;
+}
+section,header,footer,div,article,main,aside,nav,figure{
+    display: flex;
+    flex-wrap: wrap;
+}
