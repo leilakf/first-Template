@@ -1,10 +1,10 @@
-  #head-top {
+ #head-top {
             width: 100%;
             height: 100vh;
             position: relative;
             overflow: hidden;
-            
-         
+
+
 
         }
 
@@ -82,7 +82,6 @@
 
         #head-top>div>section:first-child>header>div>ul {
             display: flex;
-            ;
             font-size: 18px;
         }
 
@@ -94,13 +93,14 @@
             color: white;
             padding: 0 30px;
             text-transform: uppercase;
-            transition:1s;
+            transition: 1s;
 
         }
-         #head-top>div>section:first-child>header>div>ul>li>a:hover{
+
+        #head-top>div>section:first-child>header>div>ul>li>a:hover {
             border-bottom: 1px solid whitesmoke;
-           
-         }
+
+        }
 
         #head-top>div>section:last-child {
             justify-content: center;
@@ -190,102 +190,159 @@
 
         /******* end head-top *******/
 
-        #banner{
+        #banner {
             display: block;
             width: 100%;
             height: 100vh;
-            border: 5px solid red;
+            /* border: 5px solid red; */
 
         }
-         #banner>section{
+
+        #banner>section {
             width: 100%;
-            border: 2px solid yellow;
+            /* border: 2px solid yellow; */
             background-color: black;
             position: relative;
-           
 
-         }
-           #banner>section:first-child{
-           height: 60%;
-              justify-content: center;
+
+        }
+
+        #banner>section:first-child {
+            height: 60%;
+            justify-content: center;
             align-items: center;
-           }
+        }
 
- #banner>section>.text{
-    width: 60%;
-    /* background-color: cyan; */
-    justify-content: center;
-   
+        #banner>section>.text {
+            width: 60%;
+            /* background-color: cyan; */
+            justify-content: center;
+
+        }
+
+        #banner>section>.text>* {
+            display: flex;
+            width: 100%;
+            color: white;
+            justify-content: center;
+
+        }
+
+        #banner>section>.text>h3 {
+            font-size: 2vw;
+        }
+
+        #banner>section>.text>h4 {
+            font-size: 1.5vw;
+            margin: 30px 0;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        #banner>section>.text>a {
+            text-transform: capitalize;
+            width: 100px;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2vw;
+            position: relative;
+        }
+
+        #banner>section>.text>a::after,
+        #banner>section>.text>a::before {
+            content: "";
+            width: 1px;
+            height: 30px;
+            background-color: white;
+            position: absolute;
+            opacity: 1;
+        }
+
+        #banner>section>.text>a::before {
+            top: 15%;
+            right: 0;
+            transition: 2s;
+        }
+
+        #banner>section>.text>a::after {
+            top: 15%;
+            left: 0px;
+            transition: 2s;
+        }
+
+        #banner>section>.text>a:hover::before {
+            opacity: 0;
+            right: -80px;
+        }
+
+        #banner>section>.text>a:hover::after {
+            opacity: 0;
+            left: -80px;
+        }
+
+        #banner>section:last-child {
+            height: 40%;
+            background-color: rgb(64, 65, 66);
+            justify-content: center;
+            align-items: center;
+            
+        }
+ #banner>section:last-child>div{
+    width:80%;
+    height: 30%;
+    /* background-color: coral; */
  }
-  #banner>section>.text>*{
+#banner>section:last-child>div>ul{
+    width: 100%;
     display: flex;
-   width: 100%;
-    color: white;
-    justify-content: center;
+}
+#banner>section:last-child>div>ul>li{
+    width: 100%;
+    /* background-color: blueviolet; */
+    font-size:25px;
 
-  }
-    #banner>section>.text>h3{
-        font-size: 2vw;
-    }
-  #banner>section>.text>h4{
-        font-size: 1.5vw;
-        margin: 30px 0;
-        text-align: center;
-        line-height:35px;
-    }
- #banner>section>.text>a{
-text-transform: capitalize;
-width: 100px;
- height: 50px;
- /* border: 1px solid red; */
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: 1.2vw;
- position: relative;
- }
- #banner>section>.text>a::after,
-  #banner>section>.text>a::before{
+
+}
+#banner>section:last-child>div>ul>li>a{
+    display: flex;
+    height:100% ;
+    align-items: center;
+    color: white;
+    padding:0 20px ;
+    justify-content: center;
+    text-transform:capitalize;
+    position: relative;
+    /* border: 1px solid red; */
+}
+#banner>section:last-child>div>ul>li>a::before,
+#banner>section:last-child>div>ul>li>a::after{
     content: "";
     width: 1px;
     height: 30px;
     background-color: white;
     position: absolute;
     opacity: 1;
- }
-  #banner>section>.text>a::before{
-     top: 15%;
-    right: 0;
-    transition: 2s;
-  }
-   #banner>section>.text>a::after{
-            top: 15%;
-            left: 0px;
-            transition: 2s;
-   }
-    #banner>section>.text>a:hover::before{
-        opacity: 0;
-         right: -80px;
-    }
-       #banner>section>.text>a:hover::after{
-        opacity: 0;
-        left: -80px;
-        }
+ transition: 2s;
+}
+#banner>section:last-child>div>ul>li>a::before{
+ top:30%;
+ right: 25%;
+ 
        
-           #banner>section:last-child{
-           height: 40%;
-           background-color: cornflowerblue;
-display: flex;
-           }
-            #banner>section:last-child>div>*{
-                width: 100%;
-                
-                /* flex-wrap: wrap; */
-                background-color: crimson;
-               
-            }
-            #banner>section:last-child>div>a{
-                border: 1px solid black;
-                justify-content: space-evenly;
-               
-            }
+}
+#banner>section:last-child>div>ul>li>a::after{
+ top: 30%;
+ left:25% ;
+       
+}
+#banner>section:last-child>div>ul>li>a:hover::before{
+opacity: 0;
+right: 30px;
+}
+#banner>section:last-child>div>ul>li>a:hover::after{
+opacity: 0;
+left: 30px;
+}
